@@ -1,0 +1,127 @@
+body {
+    background-color: #4c4d4c;
+    color: white;
+}
+
+body a {
+    color: #1a9fc0;
+}
+
+#error {
+    opacity: 0;
+    background-color: rgba(212, 104, 104, 0.438);
+    border: 3px dashed #ff3333;
+    text-align: left;
+    width: 400px;
+    margin: 5px auto;
+    padding: 2px 45px;
+    -webkit-animation: error 5s ease-in-out;
+    animation: error 5s ease-in-out;
+}
+
+@-webkit-keyframes error {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes error {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.container .row form::-webkit-scrollbar {
+    background-color: #252525;
+    width: 5px;
+}
+
+.container .row form::-webkit-scrollbar-thumb {
+    background-color: #929292;
+    border-radius: 50px;
+}
+
+.container .row h2 {
+    font-weight: 700;
+}
+
+.container .row h2 span {
+    font-weight: bolder;
+    color: #55fa79;
+}
+
+.container .row h3 {
+    color: #faae67;
+}
+
+.container .row #form {
+    background-color: #4c4d4c;
+    height: 100%;
+    border-radius: 10px;
+    background: #4c4d4c;
+    -webkit-box-shadow: 19px 19px 40px #464746,
+        -19px -19px 40px #525352;
+    box-shadow: 19px 19px 40px #464746,
+        -19px -19px 40px #525352;
+}
+
+.container .row #form input[type="email"],
+.container .row #form input[type="text"],
+.container .row #form input[type="password"] {
+    background: none;
+    border: 1px solid gray;
+    padding: 10px 15px;
+    color: #73e28f;
+}
+
+.container .row #form input[type="text"]:focus,
+.container .row #form input[type="email"]:focus,
+.container .row #form input[type="password"]:focus {
+    border: 3px solid #7afda1;
+    outline: none;
+    -webkit-box-shadow: 1px 1px 15px 1px #127745;
+    box-shadow: 1px 1px 15px 1px #127745;
+    background: none;
+}
+
+.container .row #form input[type="submit"] {
+    border: none;
+    padding: 8px 71px;
+    background-color: #55fa79;
+    color: #4c4d4c;
+    font-weight: bolder;
+}
+
+form {
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #3b3b3b;
+}
+
+/*# sourceMappingURL=login.css.map */

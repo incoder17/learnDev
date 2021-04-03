@@ -1,0 +1,75 @@
+body{
+background:#dddddd;
+}
+#center{
+    height:100%;
+    background:white;
+
+}
+#profile_details img{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+    border-radius:20px;
+    margin:0px auto;
+}
+#profile_details .img{
+
+    position:relative;
+
+}
+
+
+#profile_details .img .red_box{
+    background:rgba(0, 0, 0, 0.356);
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:20px;
+    z-index:2;
+transition:all .5s;
+    opacity: 0;
+
+    cursor:pointer;
+}
+#profile_details .img:hover .red_box{
+    opacity: 1;
+}
+#profile_details .red_box {
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+
+#profile_details .red_box .icon i{
+    color:white;
+    font-size:40px;
+}
+
+
+.details{
+    background:#f6f5f5;
+    margin-top:-40px;
+    padding-top:60px !important;
+    border-radius: 10px;
+    color:white;
+}
+.main-details {
+    margin-top: 50px;
+}
+.main-details .heading{
+    color:#49346b;
+    font-family:'Roboto';
+    font-weight:600;
+    left:0;
+   
+}
+
+.main-details h4{
+    color:blue;
+    font-family:'Roboto';
+    font-weight:700;
+}

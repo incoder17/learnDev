@@ -1,0 +1,46 @@
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .title {
+text-align: center;
+width:100%;
+color:#5E81F4;
+
+}
+ .title h1{
+     margin-top:50px;
+   font-family:'Roboto','san-sarif';
+}
+ .control ul{
+    display: flex;
+    margin-top: 50px;
+}
+
+ .control ul li a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(224, 75, 100);
+    padding:12px 24px;
+    color: white;
+    border-radius: 10px;
+    transition: all .5s;
+}
+ .control ul li a:hover{
+    background-color: rgb(187, 64, 64);
+    box-shadow: -1px 11px 16px 0px #a729298f;
+}
+ .control ul li a i{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+ .control ul li{
+    list-style: none;
+    margin:12px 15px;
+
+}
+

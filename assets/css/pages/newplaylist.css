@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #f5f5fb;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.back a {
+    background-color: #5E81F4;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+    position: fixed;
+    top: 0px;
+}
+
+#loading p {
+    background-color: rgb(252, 129, 129);
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+#loading .success {
+    background-color: rgb(88, 199, 78);
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    transition: opacity;
+    animation: fadeOut infinite;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#loading .errorHeading {
+    background-color: rgb(252, 129, 129);
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    display:none;
+}
+#loading .error {
+    background-color: rgb(252, 129, 129);
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+#loading .waiting {
+    background-color: rgb(90, 80, 240);
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.header {
+
+    margin: 15px 50px;
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.header .file {
+    width: 100%;
+    text-align: center;
+    margin: 60px 0px;
+    
+    
+}
+.header .file #submit_form{
+    background-color: #dddcdc;
+    width: 40%;
+    margin:0px auto;
+    height:100%;
+    padding:50px;
+    
+}
+.header .file #submit_form #changeHeading,
+.header .file #submit_form #changeDescription{
+    position: absolute;
+    top:235px;
+    left:455px;
+    display:none;
+}
+.header .file #submit_form #changeDescription{
+    top:220px;
+    left:455px;
+    display:none;
+}
+.header .file #label{
+    color: #ffffff;
+    background-color: #ff6c6c;
+    padding:10px 20px;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.header .file input[type="text" i],
+.header .file textarea{
+    background: transparent;
+    color: #525252;
+    padding:5px 10px;
+    border:none;
+    outline: none;
+    border-bottom: 2px solid gray;
+}
+
+.header .file textarea{
+    border:2px solid gray;
+    margin: 10px 0px ;
+}
+.header .file input[type="submit" i]{
+    color:#fff;
+    background-color: #5E81F4;
+    border:none;
+    outline:none;
+    padding:5px 22px ;
+    margin-top:15px;
+    cursor: pointer;
+    width:40%;
+}
+/* .header .file #label {
+    color: white;
+    background-color: rgb(21, 172, 89);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .5s
+}
+
+.header .file #label:hover {
+    background-color: rgb(15, 129, 67);
+    box-shadow: -1px 11px 26px 0px #29a7498f;
+} */
+
+.playlist_details {
+    width: 100%;
+    height: 98vh;
+    overflow-x: scroll;
+    padding: 0px 150px;
+}
+
+.playlist_details .title p {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(87, 87, 87);
+}
+
+.playlist_details .title h1 {
+    color: #5E81F4;
+}
+
+.playlist_details .title hr {
+    width: 120px;
+    margin: 10px 0px;
+
+    border: 1px solid #525252;
+    border-radius: 20px;
+}
+
+.playlist_details .videos {
+    background-color: #F5F5FB;
+    /* padding: 12px 10px; */
+
+}
+
+
+
+
+.playlist_details  #videos{
+   background-color: #9c9c9c;
+    width: 100%;
+
+padding:20px;
+display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);  
+}
+@media(max-width:540px){
+    .playlist_details  #videos {
+       grid-template-columns: repeat(1, 1fr);
+    }
+  }
+.playlist_details  #videos .playlist_videos {
+max-width:300px;
+    
+    margin:5px;
+    /* margin: 50px 10px; */
+    
+    height:100%;
+    background-color: #dfdfdf;
+    padding:5px;    
+    border-radius: 10px;
+}
+
+.playlist_details  #videos .playlist_videos .detail .date_time{
+
+    font-weight: 400;
+    font-size: 12px;
+    float:left;
+}
+.playlist_details  #videos .playlist_videos .detail .description{
+    font-size: 10px;
+    margin-top:5px;
+    color:gray;
+    font-weight:700;
+    
+}
+.playlist_details  #videos .playlist_videos .detail .heading{
+    color:rgb(71, 71, 71) ;
+    font-size:14px ;
+    font-weight:800;
+}
+.playlist_details .videos #image img {
+    width: 50px;
+}
+
+.playlist_details .playlist_title .edit_title button,
+.playlist_details .playlist_title .delete_title button {
+    background-color: #28c501;
+    padding: 10px 12px;
+    color: wheat;
+    border: none;
+    cursor: pointer;
+    margin: 10px 10px;
+}
+.playlist_details .playlist_title {
+    display: flex;
+    align-items:center ;
+}
+.playlist_details .playlist_title .delete_title button {
+    background-color: #eb4c4c;
+}
+
+.playlist_details .playlist_title .edit_title,
+.playlist_details .playlist_title .delete_title {
+
+    display: none;
+}
+.title #title_form  input[type="text" i]
+{
+background-color: transparent;
+padding:5px 6px;
+padding-left:12px;
+border:none;
+border-bottom :1px solid gray;
+color:  rgb(90, 80, 240);
+}
+.title #title_form  input[type="submit" i]{
+    background-color: #5E81F4;
+    padding:8px 14px;
+    font-weight:bold;
+    color:white;
+    border:none;
+    margin-left:20px;
+    cursor: pointer;
+    border-radius:5px;
+    border:2px solid white;
+}
+.title #title_form  input[type="text" i]:focus{
+    border-bottom :2px solid rgb(68, 117, 253);
+outline: none;
+}

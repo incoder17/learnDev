@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#all_templates{
+    background:#fff;
+    height:100%;
+    padding:50px;
+    margin-top:50px;
+}
+
+
+#template_download{
+    border-radius: 12px;
+    background:#edeef7;
+width: 220px;
+height:290px;
+}

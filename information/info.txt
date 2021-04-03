@@ -1,0 +1,2 @@
+//for live search in chat application page 
+//Select * from users where username like $username

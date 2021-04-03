@@ -1,0 +1,93 @@
+body{
+    background-color:#4c4d4c;
+    color: white;
+    a{
+        color: #1a9fc0;
+    }
+}
+#error{
+    opacity: 0;
+    background-color: rgba(212, 104, 104, 0.438);
+    border: 3px dashed rgb(255, 51, 51);
+    text-align: left;
+    width: 400px;
+    margin:5px auto ;
+    padding: 2px 45px ;
+   animation: error 5s ease-in-out;
+  
+   @keyframes error {
+       0%{
+           opacity: 0;
+       }
+       15%{
+           opacity: 1;
+       }
+       85%{
+           opacity: 1;
+       }
+       100%{
+           opacity: 0;
+           visibility: hidden;
+       }
+   }
+}
+.container{
+    .row{
+  
+       
+        form{
+            
+            &::-webkit-scrollbar{
+                background-color: #252525;
+                width: 5px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background-color: #929292;
+                border-radius: 50px;
+            }
+        }
+        
+        h2{
+            font-weight: 700;
+            span{
+                font-weight: bolder;
+                color: #55fa79;
+            }
+        }
+        h3{
+            color: #faae67;
+        }
+        #form{
+            background-color: #4c4d4c;
+            height: 100%;
+            border-radius: 10px;
+            background: #4c4d4c;
+            box-shadow:  19px 19px 40px #464746, 
+                         -19px -19px 40px #525352;
+        
+        input[type="email"],
+        input[type="password"]{
+           background: none;
+           border: 1px solid gray;
+           padding: 10px 15px;
+           color: rgb(115, 226, 143);
+           &:focus{
+               border: 3px solid rgb(122, 253, 161);
+               outline: none;
+               box-shadow: 1px 1px 15px 1px #127745;
+               background: none;
+           }
+
+        }
+
+        input[type="submit"]{
+            border: none;
+            padding: 8px 71px;
+          background-color: #55fa79;
+          color: #4c4d4c;
+          font-weight: bolder;
+        }
+        
+                        }
+    }
+}
